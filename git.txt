@@ -33,7 +33,14 @@ Iniciamos Git
     1.  Creamos un archivo "touch hellogit.py"
     2.  git init -- Iniciamos un repositorio de git en la raiz de la carpeta donde iniciemos.
 ----------------------------------------------------------------------------------
-Ramas:
+Primeros comandos:
+Commit: Es como tomar una fotografía del estado actual de nuestro proyecto en un memento determinado,
+        estos commits se almacenan en un historial de cambios del repositorio, identificados por un hash o identificador unico
+Add: Este comando nos permite añadir archivo al area del Stage, zona intermedia donde se preparan los archivos antes de hacer un Commit
     1.  git branch -m main "Comando para cambiar nombre de master"
     2.  git status "Ver el estado del repositorio"
+    3.  git add hellogit.py "Añadimos un archivo"
+    4.  git add . "Añade todo al repositorio"
+    5.  git commit -m "Primeros archivos de nuestro estudio" -- Para realizar un commit
+    6.  git log "Nos indica los commits"
 
