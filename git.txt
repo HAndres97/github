@@ -1,0 +1,39 @@
+Enlace sobre teoria de git:
+    https://git-scm.com/book/en/v2
+
+--------------------------------------------------------------------------------
+Instalador de paquetes de Windows: winget (WinGet es una herramienta de línea de comandos,
+que permite a los usuarios detectar, instalar, actualizar, quitar y configurar aplicaciones en equipos con Windows 10 y Windows 11)
+Comandos:
+    1.  winget --version
+    2.  winget upgrade (Para ver que actualizaciones hay disponibles)
+    3.  winget upgrade --id Git.Git (Actualiza Git)
+    Enlace de explicacion y ejemplios:
+        https://www.crashell.com/estudio/4_maneras_de_instalar_git_por_linea_de_comandos
+
+----------------------------------------------------------------------------------
+Comandos básicos
+    1.  ls  "Ver los directorios, que nuestra carpeta"
+    2.  cd "Acceder a una directorio"
+    3.  pwd "En que ruta estamos"
+    4.  mkdir "Nueva Carpeta"
+    5.  touch  hello-git.txt "Crea un txt"
+    6.  rm hello-git.txt "Elimina el txt"
+    7.  cp  hello-git.txt /Practica "Copia el archivo al ese directorio"
+    8.  mv hello-git.txt /Practica "Mueve el archivo al ese directorio"
+
+----------------------------------------------------------------------------------
+Configuracion primera vez
+    1. git config --gloabl user.name "Christian Herrera"
+    2. git config --global user.email "hchristianandres@gmail.com"
+    Verificar con
+    3. git --list o git user.name
+----------------------------------------------------------------------------------
+Iniciamos Git
+    1.  Creamos un archivo "touch hellogit.py"
+    2.  git init -- Iniciamos un repositorio de git en la raiz de la carpeta donde iniciemos.
+----------------------------------------------------------------------------------
+Ramas:
+    1.  git branch -m main "Comando para cambiar nombre de master"
+    2.  git status "Ver el estado del repositorio"
+
