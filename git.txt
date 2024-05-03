@@ -43,4 +43,6 @@ Add: Este comando nos permite añadir archivo al area del Stage, zona intermedia
     4.  git add . "Añade todo al repositorio"
     5.  git commit -m "Primeros archivos de nuestro estudio" -- Para realizar un commit
     6.  git log "Nos indica los commits"
+    7.  git checkout hellogit2.py
+    8.  git reset hellogit.py "Quita las modificaciones"
 
