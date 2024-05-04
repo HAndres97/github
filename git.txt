@@ -43,11 +43,16 @@ Add: Este comando nos permite añadir archivo al area del Stage, zona intermedia
     4.  git add . "Añade todo al repositorio"
     5.  git commit -m "Primeros archivos de nuestro estudio" -- Para realizar un commit
     6.  git log "Nos indica los commits"
-    7.  git checkout hellogit2.py
+    7.  git checkout hellogit2.py "Quita las modificaciones"
     8.  git reset hellogit.py "Quita las modificaciones"
     9.  git log --graph "Nos muestra los datos de log de distinta forma"
         - git log --pretty=oneline
         - git log --decorate
         - git log --graph --pretty=oneline --decorate
-    10. git config --global alias.tree "log --graph --decorate --all --oneline"
+    10. git config --global alias.tree "log --graph --decorate --all --oneline" Configuramos una alias "tree significado todo eso"
+    11. git tree, llamamos al alias antes creado
+    12. touch .gitignore, archivo para añadir rutas/archivos que no se debe tener en cuenta, archivos temporales
+    13. git diff, antes de realizar un commit podemos verificar que cambios hay respecto al commit anterior.
+    14. git diff ba3ea58 923308d, diferencia que hay entre dos commits
+    15. git diff --name-only ba3ea58 923308d, aparece solo los nombres de los archivos modificados
 
