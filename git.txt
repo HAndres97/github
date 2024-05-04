@@ -45,4 +45,9 @@ Add: Este comando nos permite añadir archivo al area del Stage, zona intermedia
     6.  git log "Nos indica los commits"
     7.  git checkout hellogit2.py
     8.  git reset hellogit.py "Quita las modificaciones"
+    9.  git log --graph "Nos muestra los datos de log de distinta forma"
+        - git log --pretty=oneline
+        - git log --decorate
+        - git log --graph --pretty=oneline --decorate
+    10. git config --global alias.tree "log --graph --decorate --all --oneline"
 
