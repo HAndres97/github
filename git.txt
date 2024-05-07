@@ -70,4 +70,5 @@ Tag: Es un punto de especifico en el historial de cambios de nuestro repositorio
     "Lo podemos hacer con checkout pero este se hace mas en remoto, cuando queremos bajar los cambios e irnos a esa rama"
     26. git merge main , "Combina los cambios que se han producido en otras ramas aqui main, primero nos colocamos donde queremos
         fusionar y ponemos la rama que queremos fucionar con nuestra rama"
-    27. 
+    27. "Si hay conflicto al modificar la misma linea de codigo en dos ramas distintas, al hacer merge nos indica que cual de
+         de los cambios nos queremos quedar, para salir del proceso marge tenemos que añadir el cambio y comitear"
