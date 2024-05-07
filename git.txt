@@ -42,7 +42,7 @@ Add: Este comando nos permite añadir archivo al area del Stage, zona intermedia
     3.  git add hellogit.py "Añadimos un archivo"
     4.  git add . "Añade todo al repositorio"
     5.  git commit -m "Primeros archivos de nuestro estudio" -- Para realizar un commit
-    6.  git log "Nos indica los commits"
+    6.  git log "Nos indica los commits, para salir de git log pulsamos tecla q "
     7.  git checkout hellogit2.py "Quita las modificaciones"
     8.  git reset hellogit.py "Quita las modificaciones"
     9.  git log --graph "Nos muestra los datos de log de distinta forma"
@@ -68,3 +68,6 @@ Tag: Es un punto de especifico en el historial de cambios de nuestro repositorio
     24. git branch login, "Creamos una nueva rama"
     25. git switch login , "Cambio a la rama de login, es mas adecuado usuarlo en local "
     "Lo podemos hacer con checkout pero este se hace mas en remoto, cuando queremos bajar los cambios e irnos a esa rama"
+    26. git merge main , "Combina los cambios que se han producido en otras ramas aqui main, primero nos colocamos donde queremos
+        fusionar y ponemos la rama que queremos fucionar con nuestra rama"
+    27. 
