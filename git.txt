@@ -55,4 +55,15 @@ Add: Este comando nos permite añadir archivo al area del Stage, zona intermedia
     13. git diff, antes de realizar un commit podemos verificar que cambios hay respecto al commit anterior.
     14. git diff ba3ea58 923308d, diferencia que hay entre dos commits
     15. git diff --name-only ba3ea58 923308d, aparece solo los nombres de los archivos modificados
-
+    16. git checkout 1aef212, cambia de rama a un commit anterior, borrando y perdiendo archivos "Si hemos hecho commit estos se quedan en esa fotografia"
+    17. git checkout head, cambia el puntero de cabecera a donde hayamos hecho el anterior checkout.
+    18. git reset --hard "Commit anterior", "borra" los commits hasta el commit comentado, entre comillas porque todavia podemos recuperar lo borrando
+    19. git reflog, historial de lo que hemos hecho, ahi vemos el commit que desaparecio y podemos volver a el
+    20. git reset --hard "Commit adelante", sirve tanto para adelante como atras, si borramos y queremos volver al principal podemos.
+Tag: Es un punto de especifico en el historial de cambios de nuestro repositorio, usados para marcar versiones de una aplicacion o punto importante
+    21. git tag version-1, Es como poner nombre a un tag.
+    22. git tag, nos lista todos los tags
+    23. git checkout tags/version-1, se mueve a la version 1.
+--------------------------------------------------------------------------------------------------------------
+    24. git branch login, "Creamos una nueva rama"
+    25 git switch login , cambio a la rama de login.
