@@ -66,4 +66,5 @@ Tag: Es un punto de especifico en el historial de cambios de nuestro repositorio
     23. git checkout tags/version-1, se mueve a la version 1.
 --------------------------------------------------------------------------------------------------------------
     24. git branch login, "Creamos una nueva rama"
-    25 git switch login , cambio a la rama de login.
+    25. git switch login , "Cambio a la rama de login, es mas adecuado usuarlo en local "
+    "Lo podemos hacer con checkout pero este se hace mas en remoto, cuando queremos bajar los cambios e irnos a esa rama"
