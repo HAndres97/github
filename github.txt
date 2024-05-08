@@ -24,8 +24,44 @@ Con Github Desktop, no hace falta todos estos pasos.
 https://www.youtube.com/watch?v=tY6IKEYz5vU
 Lo hace mas sencillo
 -------------------------------------------------------------------------------------------------------------------------
-Conenctar mi directorio de tabajo con git usando el siguiente comando:
+Conectar mi directorio de tabajo con git usando el siguiente comando:
 -- git remote add origin git@github.com:HAndres97/github.git
 
 -------------------------------------------------------------------------------------------------
-Una vez conectado podemos usar los siguientes comandos
+Caso de uso:
+    Cuando cree el repositorio, actualize el readme.md y se creo un commit
+    cuando sincronize con el repositorio local/remoto e hice un push me decia 
+    que necesitab un pull antes, pero este pull no se podia hacer ya que las historias
+    eran distintas , por lo que hay que forzar a unirlas a traves de 
+    git pull origin main --allow-unrelated-histories "En mi caso main"
+
+--------------------------------------------------------------------------------------------------
+
+Una vez conectado podemos usar los siguientes comandos:
+    1. git push -u origin main, subimos todo nuestro proyecto a la rama principal
+    2. git pull origin main, descargar los cambios que ha habido en el repositorio
+    3. git fetch actualizar los cambios, pero sin bajarlos, solo el hisorial que se ve en git tree
+
+--------------------------------------------------------------------------------------------------
+Si queremos realizar un cambio en un repositorio publico en el que no tenemos permiso de acceder,
+tenemos que realizar un fork, es una copoia identica de su repositorio pero copiado al nuestro
+
+--------------------------------------------------------------------------------------------------
+Podemos usar stackedit para realizar un markdown online,
+https://stackedit.io/app#
+
+---------------------------------------------------------------------------------------------------
+PULL REQUEST
+Sirve para solicitar algun cambio en un proyecto una vez hecho fork, el dueño del repositorio mira 
+las pull request solicitadas y la puede añadir a su  repositorio.
+
+---------------------------------------------------------------------------------------------------
+Los conflictos de Pull Request se resuelve en Github.
+
+---------------------------------------------------------------------------------------------------
+Marcdown documentacion:
+    https://docs.github.com/es/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax
+
+--------------------------------------------------------------------------------------------
+Vemos las herramientas graficas en este caso de github Desktop
+
