@@ -21,7 +21,8 @@ Seguir el video en la parte de SSH, en mi ordenador ya tenia la carpeta .ssh y l
 Crear nuevas llaves
 https://docs.github.com/es/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent?platform=windows
 Con Github Desktop, no hace falta todos estos pasos.
-
+https://www.youtube.com/watch?v=tY6IKEYz5vU
+Lo hace mas sencillo
 -------------------------------------------------------------------------------------------------------------------------
 Conenctar mi directorio de tabajo con git usando el siguiente comando:
 -- git remote add origin git@github.com:HAndres97/github.git
