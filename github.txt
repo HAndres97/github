@@ -63,5 +63,8 @@ Marcdown documentacion:
     https://docs.github.com/es/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax
 
 --------------------------------------------------------------------------------------------
-Vemos las herramientas graficas en este caso de github Desktop
+Vemos las herramientas graficas en este caso de github Desktop y tambien vemos gitkraken 
+a Mourodev le gusta mas este ultimo
+-------------------------------------------------------------------------------------------------
+
 
