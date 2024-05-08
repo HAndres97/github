@@ -1,0 +1,30 @@
+git: Es un sistema  de control de versiones, una herraminesta que nos permitira trabajar con nuestro codigo de manera segura.
+github:  Es una plataforma de alojamiento de codigo que utiliza el sistema de control de versiones git.
+    1.  Repositorios para almacenar nuestro codigo puede ser publico o privado.
+    2.  Integracion continuas, nos permite integrar la contruccion y las prubas de nuestro codigo directamente en la plataforma
+    3.  Seguimiento de errores.
+    4.  Colaboracion en proyectos de cofigo abierto.
+Tenemos un archivo PDF con los comandos mas importantes de git.
+
+Al crear nuestro primer repositorio, podemos poner como nombre el mismo que el del propietario y asi montar en ese repositorio 
+nuestra pagina de presentación.
+
+Realizar un buen perfin en nuestro readme.md, usamos lenguaje markdown md, su sintaxis basicas y recursos podemos
+encontrarla en : https://www.markdownguide.org/cheat-sheet/
+
+Podemos coger de referencia la pagina de moureDev: https://github.com/mouredev/mouredev/blob/master/README.md?plain=1
+
+------------------------------------------------------------------------------------------------------------------------------
+Autentificación con github, conectar de local a remoto con github a traves de SSH
+Enlace de referencia: https://docs.github.com/es/authentication
+Seguir el video en la parte de SSH, en mi ordenador ya tenia la carpeta .ssh y las claves.
+Crear nuevas llaves
+https://docs.github.com/es/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent?platform=windows
+Con Github Desktop, no hace falta todos estos pasos.
+
+-------------------------------------------------------------------------------------------------------------------------
+Conenctar mi directorio de tabajo con git usando el siguiente comando:
+-- git remote add origin git@github.com:HAndres97/github.git
+
+-------------------------------------------------------------------------------------------------
+Una vez conectado podemos usar los siguientes comandos

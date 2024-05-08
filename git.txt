@@ -76,5 +76,6 @@ Tag: Es un punto de especifico en el historial de cambios de nuestro repositorio
     28. git stash,"Cuando trabajamos y queremos cambiar de rama sin comitear los cambios, podemos hacerlo con stash, lo guarda en local de la rama, y puedes cambiar de rama"
     29. git stash pop, si queremos recuperar lo guardado en stash y lo borra de la lista
     30. git stash drop, si no queremos recuperar y borrar lo guardado.
-    31. git diff 
+    31. git branch -d login, "Una vez hecho el trabajo e integrado se suele borrar la rama"
+
 
