@@ -1,2 +1,2 @@
 # github
-Teoria y practica sobre la utlilzación de git y github.
+Teoria y practica sobre la utlilización de git y github.
