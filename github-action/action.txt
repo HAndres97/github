@@ -1,0 +1,70 @@
+Teoria sobre Github-Action
+Enlace de video explicativo:
+    https://www.youtube.com/watch?v=pNtcTmCiXzw
+ Github Action sirve para crear procesos de ejecucion automaticos, conlleva una integracion continua
+ y despliegue continuo.
+    https://docs.github.com/es/actions/learn-github-actions/understanding-github-actions
+    Enlace documentacion de como usarlo.
+----------------------------------------------------------------------------------------
+    Principales caracteristicas.
+        1.  Integracion/despliegue continuo
+        2.  Todo desde Github
+        3.  Podemos elegir el tipo de maquina que  lanze nuestro proyecto.
+        4.  Soporta principales lenguajes de programacion
+        5.  Gratuito 2000 minutos
+-----------------------------------------------------------------------------------------
+Inicio Rápido:
+    1. Crear directorio .github/workflow
+    2. Crear archivo <nombre-archivo>.yml
+        --- Estructura:
+        name: stats -- Nombre de nuestra action
+
+        on: -- Cuando queremos que se lance la action, cada vez que se hace un push en una rama, cuando se solicite un pull request, o cada tiempo 1 hora etc
+            push:
+                branches:[main] -- Se va a ejecutar en la rama main, cuando se realice un push
+        jobs: -- conjunto de pasos que se deben ejecutar.
+            build: --Proceso de construccion
+                runs-on: ubuntu-latest  -- En que maquina queremos arrancar esta accion
+
+                permissions:
+                    contents:write -- Permite escribir en nuestro repo, medida obligatoria del action de commit and push changes de abajo.
+
+                steps: -- Pasos que se deben ejecutar
+                    - name: Checkout repo -- Nombre del paso
+                        uses: actions/checkout@v4 "Dentro de las actiona podemos usar otras actions creado por la comunidad, en este caso esta accion nos trae todo el codigo de repositorio"
+
+                    - name: Setup Python --Ponemos nombre al paso
+                        uses: actions/setup-python@v5 "Configuramos python"
+                            with:
+                                python-version: '3.11' -- Indicamos con que version estamos trabanjando si es distinta al de setup-python@v5
+                    - name: Run Script
+                        run: python ./roadmap/stats.py -- Una vez creado todo, podemos ya ejecutar nuestro Script, indicando el fichero que queremos ejecutar la ruta
+                                                       -- En este ejercicio se genera un fichero jason , pero ese fichero se encuentra dentro de la maquina creada.
+                    - name: Commit and Push Changes 
+                        uses: stefanzweifel/git-auto-commit-action@v5 -- Action creada por otra persona, encontrada en el marketplace
+                        with: -- Aqui podemos modificar la action, y que hago lo que necesitemos
+                            commit_message: Update message -- Cambiamos el mensaje de commit
+                            commit_user_name: Andres Herrera [Github Action] -- Decimos quien hace el commit y desde donde
+                            commit_user_email: hchristianandres@gmail.com
+                            commit_author: HAndres97 -- Autor
+
+-- Aqui buscamos actions creadas, importante Enlace
+    https://github.com/marketplace
+
+Una vez acabemos lo commiteamos y la primera vez que lo creamos se acciona sola. Todo hecho desde seccion de actions de github
+
+
+    on: -- Lanzamos un evento programado
+        schedule:
+            - cron: '0 0 * * *' Que se ejecute una vez al Dia.
+            - cron: '* * * * *' --Tenemos 5 valores que podemos modificar
+            - cron: '*' --> Minuto [0,59] /15 cada 15 minutos
+            - cron: '* *' --> Hora [0,23]
+            - cron: '* * *' --> Dia del mes [1-31]
+            - cron: '* * * *' --> Mes del año [1,12]
+            - cron: '* * * * *' --> Dia de la semana.
+Enlace explicativo
+https://pubs.opengroup.org/onlinepubs/9699919799/utilities/crontab.html#tag_20_25_07
+
+
+                
