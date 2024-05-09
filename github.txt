@@ -93,7 +93,24 @@ GitFlow: Es un flujo de coloboración.
     y que nos acepten los cambios, en github.
 ----------------------------------------------------------------------------------------------------
 Ahora vamos a ver comandos poco usados, potentes y un poco peligroso
-
+    1.  git cherry-pick ,"Añade contenido de un commit especifico de una rama a otra rama, en vez de fucionarla
+        selecciona un commit en especifico que contiene cambios que necesitamos y lo añadimos a la principal"
+        1.1 git cheery-pick <identificador>, si habria conflictos habria que solucionarlo
+        1.2 git cherry-pick -i <>, iteracativo
+        1.3 git cherry-pick --continue
+        1.4 git cherry-pick --abort
+    2.  git rebase, "Sirve para modificar el historial de commits de una rama, en vez de fusionar dos ramas, este comando mueve
+        todos los commits de una rama al final de otra,y modifica el historial de commits durante el proceso."
+        2.1 git rebase <>
+        2.2 git reabse -i <>
+        2.3 git rebase 
+-------------------------------------------------------------------------------------------------------
+Github, tiene dos herramientas muy importantes.
+    1. github pages, nuestro repositorio sirve como host para desplegar nuestra web a traves de github pages
+        https://pages.github.com/
+    2. github actions, sirve para realizar automatizaciones, para desplegar pasar test lo hemos visto en el curso Quallentum
+        https://github.com/features/actions
+        
 
 
 
