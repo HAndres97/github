@@ -6,6 +6,6 @@ En el archivo [github.txt](github.txt) explica como crear repositorios, los prin
 Vemos que es github-action, y su principal estructura explicado paso a paso ademas de enlaces donde podemos ampliar nuestro conocimiento sobre el mismo, todo ello en el archivo [action.txt](github-action/action.txt)
 ## git-pages
 Una vez creado el repositorio, con nuestros archivos index.html, css.. seguimos los siguientes pasos:
-    1.  Nos colocamos en Settings, en el apartado Pages
-    2.  Configuramos las ramas y los archivos.
-    3.  Una vez realizado la configuracion, Github pages, te dara un enlace donde abra lanzado la pagina web.
+    1. Nos colocamos en Settings, en el apartado Pages
+    2. Configuramos las ramas y los archivos.
+    3. Una vez realizado la configuracion, Github pages, te dara un enlace donde abra lanzado la pagina web.
