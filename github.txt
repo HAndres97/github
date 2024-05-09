@@ -84,7 +84,8 @@ GitFlow: Es un flujo de coloboración.
     Para poder usar este flujo existe un pluggin:
         1.  git-flow, "Vemos los comandos posibles"
         2.  git flow init, inicializamos con todos las ramas y ponemos los nombres de las ramas.
-        
+        3.  git flow feature star <nombre de la rama>, trabajamos en ella.
+        4.
 
 
 
