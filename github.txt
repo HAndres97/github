@@ -66,5 +66,25 @@ Marcdown documentacion:
 Vemos las herramientas graficas en este caso de github Desktop y tambien vemos gitkraken 
 a Mourodev le gusta mas este ultimo
 -------------------------------------------------------------------------------------------------
+GitFlow: Es un flujo de coloboración.
+    Recomendacion, aunque tenga un proyecto propio seguir un flujo de colaboracion, se hace mas sencillo el trabajo y
+    aprendemos a entender mejor los flujos.
+    Documentación para aprender como funciona mejor Git-flow:
+    1.  https://www.gitkraken.com/learn/git/best-practices/git-branch-strategy
+    2.  https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow
+
+    Se basa en dos ramas principales:
+        1.  La rama main: Es la rama que versiona, solo  para lo que llega produccion y tagear(Versionar)
+        2.  La rama develop: Todo lo que esta en esta rama llegado al caso puede llegar a produccion,
+            cuando esto sucede se crea una version en main. Esta rama principal esta formada por 3 ramas distintas
+            2.1 Feature: Se utiliza para desarrollar nuevas caracteristicas o funcionalidades, una vez termina se une a la rama develop
+            2.2 Realese: Se usa para preparar una nueva version de la aplicación para el despliegue. Se fusiona en las dos ramas principales
+        3.  Hotfix: Se utiliza para solucionar errores criticos en la version de main, se basa en la rama main, 
+            cuando se soluciona el problema pasa un version sin bug a main y develop.
+    Para poder usar este flujo existe un pluggin:
+        1.  git-flow, "Vemos los comandos posibles"
+        2.  git flow init, inicializamos con todos las ramas y ponemos los nombres de las ramas.
+        
+
 
 
