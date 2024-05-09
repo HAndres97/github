@@ -84,7 +84,16 @@ GitFlow: Es un flujo de coloboración.
     Para poder usar este flujo existe un pluggin:
         1.  git-flow, "Vemos los comandos posibles"
         2.  git flow init, inicializamos con todos las ramas y ponemos los nombres de las ramas.
-        
+        3.  git flow feature start <nombre de la rama>, trabajamos en ella.
+        4.  git flow feature finish <nombre de la rama>, la une a develop y elimina la rama
+        5.  git flow realise start <nombre del tag>, inicia preparacion del despliegue
+        6.  gir flow realise finish <nombre del tag>, finializa elimina la rama y se coloca en main.
+        7... Asi con todos los comandos vistos
+    Cuando trabajamos en colaborativo y con git flow, si queremos realizar un cambio tenemos que realizar un pull-request
+    y que nos acepten los cambios, en github.
+----------------------------------------------------------------------------------------------------
+Ahora vamos a ver comandos poco usados, potentes y un poco peligroso
+
 
 
 
